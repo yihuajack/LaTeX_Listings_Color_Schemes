@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}
+\usepackage{fontspec,xcolor}
+% \usepackage[mono]{inconsolata}
+\usepackage[procnames]{listings}
+\setmonofont{Consolas}  % Requires XeLaTeX
+\lstdefinestyle{VSCode-Python}{
+	backgroundcolor=\color[RGB]{245,245,244},
+	basicstyle=\footnotesize\ttfamily,
+	breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+	columns=fixed,
+	commentstyle=\itshape\color[RGB]{127,132,142},
+	frame=single,
+	identifierstyle=,
+    keywordstyle=\itshape\color[RGB]{198,120,221},
+    keywordstyle=[2]\color[RGB]{86,182,194},
+    numbers=left,
+    numberstyle=\tiny,
+    otherkeywords={as,with},
+    procnamekeys={def,class},
+    procnamestyle=\color[RGB]{97,175,239},
+    rulecolor=\color{black},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+	stringstyle=\color[RGB]{152,195,121},
+    tabsize=4,
+    title=\lstname
+}
+\begin{document}
+\lstinputlisting[language=Python,style=VSCode-Python]{VSCode-Python.py}
+\end{document}
